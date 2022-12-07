@@ -8,6 +8,6 @@ RUN apk update && \
 
 ENV PUPPETEER_CFG /data/gitea/conf/.puppeteer.json
 ADD config/.puppeteer.json /data/gitea/conf/.;
-RUN wget -c https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-linux-amd64.tar.gz -O - | tar -xz; \
-        ln -s "$(pwd)"/pandoc-2.16.2/bin/pandoc /usr/bin/pandoc;
+RUN wget -c https://github.com/jgm/pandoc/releases/download/2.19.2/pandoc-2.19.2-linux-amd64.tar.gz -O - | tar -xz; \
+        ln -s "$(pwd)"/pandoc-2.19.2/bin/pandoc /usr/bin/pandoc;
 
